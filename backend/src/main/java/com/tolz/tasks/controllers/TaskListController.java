@@ -54,7 +54,6 @@ public class TaskListController {
                 taskListId,
                 taskListMapper.fromDto(taskListDto)
         );
-
         return taskListMapper.toDto(updatedTaskList);
     }
 

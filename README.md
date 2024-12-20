@@ -19,14 +19,18 @@
 ## API Endpoints
 
 ### Base URL:
-`http://localhost:8080/api/tasks`
+`http://localhost:8080/api/tasks-list`
 
-| Method | Endpoint           | Description                |
-|--------|--------------------|----------------------------|
-| GET    | `/`                | Retrieve all tasks.        |
-| POST   | `/`                | Create a new task.         |
-| PUT    | `/{id}`            | Update a task by ID.       |
-| DELETE | `/{id}`            | Delete a task by ID.       |
+| Method | Endpoint                      | Description              |
+|--------|-------------------------------|--------------------------|
+| GET    | `/tasks-lists/{id}`           | Retrieve all task lists. |
+| POST   | `/tasks-lists`                | Create a new task list   |
+| PUT    | `/tasks-lists/{id}`           | Update a task by ID.     |
+| DELETE | `tasks-lists/{id}`            | Delete a task by ID.     |
+| GET    | `/tasks-lists/{id}/tasks/{id}`| Retrieve all task .      |
+| POST   | `/tasks-lists/{id}/tasks/`    | Create a new task        |
+| PUT    | `/tasks-lists/{id}/tasks/{id}`| Update a task by ID.     |
+| DELETE | `/tasks-lists/{id}/tasks/{id}`| Delete a task by ID.     |
 
 ---
 

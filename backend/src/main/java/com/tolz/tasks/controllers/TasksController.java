@@ -43,7 +43,6 @@ public class TasksController {
         Task createdTask = taskService.createTask(taskListId,
                 taskMapper.fromDto(taskDto)
         );
-
         return taskMapper.toDto(createdTask);
     }
 
